@@ -3,9 +3,9 @@ docker login
 
 docker compose up --build
 
-docker build -t dsuprunov/demo-app:1.0.0 . --no-cache
+docker build -t dsuprunov/demo-app:1.0.1 . --no-cache
 
-docker push dsuprunov/demo-app:1.0.0
+docker push dsuprunov/demo-app:1.0.1
 ```
 
 ```bash
@@ -15,7 +15,7 @@ helm template demo-app ./charts/demo-app-chart --namespace demo-app
 
 mkdir -p dist
 
-helm package ./charts/demo-app-chart --version 0.1.0 --app-version 1.0.0 --destination dist
+helm package ./charts/demo-app-chart --version 0.1.1 --app-version 1.0.1 --destination dist
 
 helm registry login registry-1.docker.io -u dsuprunov
 

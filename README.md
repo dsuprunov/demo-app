@@ -19,7 +19,7 @@ helm package ./charts/demo-app-chart --version 0.1.1 --app-version 1.0.1 --desti
 
 helm registry login registry-1.docker.io -u dsuprunov
 
-helm push dist/demo-app-chart-0.1.0.tgz oci://registry-1.docker.io/dsuprunov
+helm push dist/demo-app-chart-0.1.1.tgz oci://registry-1.docker.io/dsuprunov
 ```
 
 ```bash
